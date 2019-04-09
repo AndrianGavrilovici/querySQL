@@ -1,0 +1,11 @@
+Select CustomerName, City From Customers;
+Select Distinct Country, CustomerID  From Customers;
+Select CustomerID, CustomerName, Country From Customers WHERE Country='Mexico';
+Select * From Customers WHERE CustomerID = 33;
+Select CustomerID, CustomerName From Customers WHERE CustomerID >= 3 And CustomerID < 22;
+Select CustomerID, CustomerName, Country From Customers WHERE NOT Country = 'Mexico' And NOT Country = 'Germany';
+Select * From Customers ORDER BY CustomerName ASC;
+Select * From Customers ORDER BY Country DESC;
+Select * From Customers ORDER BY CustomerID DESC, Country ASC;
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Andrian Gavrilovici', 'Andrian', 'Str. Cuzmina', 'Holercani', 'MD-4547', 'Republica Moldova');
+Select * From Customers Where CustomerID >= 38;
